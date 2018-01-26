@@ -1,0 +1,17 @@
+TODO
+запускать службу от пользователя apache
+нужно улучшить защиту запуска приложений
+
+
+установка 
+make clean
+make all
+make install
+chkconfig --add exchangeserver --level=35
+service exchangeserver start
+
+удаление
+service exchangeserver stop
+chkconfig --del exchangeserver
+make uninstall
+
